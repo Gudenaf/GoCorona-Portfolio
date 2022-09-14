@@ -1,5 +1,8 @@
 # GoCorona
 
+## Описание : 
+Одностраничный лендинг, рекламирующий приложение по борьбе с коронавирусом.
+
 ## Figma link :
 https://www.figma.com/file/nTBMl6kqezqTrICmG7hRh7/Gocorona-Website
 
