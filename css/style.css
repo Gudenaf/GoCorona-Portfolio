@@ -117,6 +117,11 @@ h6 {
   font-size: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 70px 0 0 0;
+}
+
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
@@ -222,6 +227,32 @@ h6 {
           flex: 1 1 auto;
 }
 
+.header__button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 252px;
+          flex: 0 0 252px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+.fixed {
+  position: fixed;
+  background-color: #fff;
+}
+
+.fixed .header__container {
+  min-height: 70px;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,6 +277,7 @@ h6 {
   font: 700 10px Raleway;
   color: #000000;
   letter-spacing: 1px;
+  display: inline-block;
 }
 
 .menu__link:hover {
@@ -254,23 +286,6 @@ h6 {
 
 .menu__body.active {
   top: 0;
-}
-
-.menu__body__button {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 252px;
-          flex: 0 0 252px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  z-index: 5;
 }
 
 .button {
@@ -462,7 +477,7 @@ h6 {
   width: 373px;
   position: relative;
   text-align: center;
-  padding: 56px 0 27px 0;
+  padding: 56px 0 28px 0;
 }
 
 .media-stay-safe__image {
@@ -521,7 +536,7 @@ h6 {
 
 .experts {
   background: #FAFBFD;
-  padding: 103px 0 116px 0;
+  padding: 104px 0 116px 0;
 }
 
 .experts__body {
@@ -830,7 +845,7 @@ h6 {
   }
 
   .stay-safe__media {
-    padding: 0 0 0 47px;
+    padding: 0 0 0 48px;
   }
 }
 
@@ -853,14 +868,14 @@ h6 {
     min-height: 80px;
   }
 
-  .menu__item {
-    margin: 0 30px 0 0;
-  }
-
-  .menu__body__button {
+  .header__button {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 180px;
             flex: 0 0 180px;
+  }
+
+  .menu__item {
+    margin: 0 30px 0 0;
   }
 
   .get-started__container::before {
@@ -922,12 +937,12 @@ h6 {
 
   .menu__item {
     margin: 0;
-    padding: 25px 0;
     display: block;
   }
 
   .menu__link {
     font-size: 20px;
+    padding: 25px 0;
   }
 
   .menu__body {
