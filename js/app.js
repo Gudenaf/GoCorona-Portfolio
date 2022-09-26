@@ -74,7 +74,8 @@
             $(`body`).toggleClass(`lock`);
         }));
         $(`.menu__link`).click((function() {
-            $(`.menu-burger,.menu__body`).removeClass(`active`);
+            $(`.menu-burger, .menu__body`).removeClass(`active`);
+            $(`body`).removeClass(`lock`);
         }));
         var header = $(".header");
         var scrollChange = 100;
