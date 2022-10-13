@@ -60,7 +60,7 @@ body {
 }
 
 body {
-  color: #616161;
+  color: var(--main-text-color);
   font-family: "Rubik";
   font-size: 12px;
   -ms-text-size-adjust: 100%;
@@ -117,6 +117,16 @@ h6 {
   font-size: inherit;
 }
 
+:root {
+  --bg-main-color: #FAFBFD;
+  --bg-second-color: #fff;
+  --main-text-color: #616161;
+  --second-text-color: #000;
+  ---title-color: #000;
+  --main-color: #EC5863;
+  --second-color: #4285F4;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding: 70px 0 0 0;
@@ -154,25 +164,6 @@ html {
   margin: 0 auto;
   max-width: 1087px;
   padding: 0 15px 0 15px;
-}
-
-[class*=-ibg] {
-  position: relative;
-}
-
-[class*=-ibg] img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-[class*=-ibg_contain] img {
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .header {
@@ -213,12 +204,12 @@ html {
 
 .header__logo-text {
   margin: 0 4.5px;
-  color: #EC5863;
+  color: var(--main-color);
   font: 700 18px Rubik;
 }
 
 .header__logo-text span {
-  color: #000000;
+  color: var(--second-text-color);
 }
 
 .header__menu {
@@ -246,7 +237,7 @@ html {
 
 .fixed {
   position: fixed;
-  background-color: #fff;
+  background-color: var(--bg-second-color);
 }
 
 .fixed .header__container {
@@ -275,7 +266,7 @@ html {
 .menu__link {
   line-height: 1.2;
   font: 700 10px Raleway;
-  color: #000000;
+  color: var(--second-text-color);
   letter-spacing: 1px;
   display: inline-block;
 }
@@ -296,7 +287,7 @@ html {
   color: #FCFDFE;
   padding: 14px 30px;
   border-radius: 5px;
-  background: #ec5863;
+  background: var(--main-color);
   text-transform: uppercase;
 }
 
@@ -308,7 +299,7 @@ html {
 }
 
 .button__blue {
-  background-color: #4285F4;
+  background-color: var(--second-color);
 }
 
 .button__blue:hover {
@@ -326,15 +317,15 @@ html {
 
 .block-text__title {
   font: 700 44px/126% Rubik;
-  color: #000;
+  color: var(---title-color);
 }
 
 .block-text__title span {
-  color: #EC5863;
+  color: var(--main-color);
 }
 
 .block-text__title__blue span {
-  color: #4285F4;
+  color: var(--second-color);
 }
 
 .block-text__title:not(:last-child) {
@@ -359,7 +350,7 @@ html {
 }
 
 .get-started {
-  background: #FAFBFD;
+  background: var(--bg-main-color);
 }
 
 .get-started__container {
@@ -386,7 +377,7 @@ html {
   -webkit-transform: translate(100%, 0);
       -ms-transform: translate(100%, 0);
           transform: translate(100%, 0);
-  background: #EC5863;
+  background: var(--main-color);
 }
 
 .get-started__content {
@@ -452,7 +443,7 @@ html {
   font: 9px/126% Rubik;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #000;
+  color: var(--second-text-color);
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -509,7 +500,7 @@ html {
 
 .media-stay-safe .media-stay-safe__item {
   position: absolute;
-  background: #EC5863;
+  background: var(--main-color);
   border-radius: 30px;
   width: 77px;
   height: 77px;
@@ -535,7 +526,7 @@ html {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 .experts {
-  background: #FAFBFD;
+  background: var(--bg-main-color);
   padding: 104px 0 116px 0;
 }
 
@@ -590,7 +581,7 @@ html {
 .statistics-experts__body {
   position: relative;
   z-index: 2;
-  background: #ffffff;
+  background: var(--bg-second-color);
   -webkit-box-shadow: 0 2px 24px rgba(88, 126, 236, 0.15);
           box-shadow: 0 2px 24px rgba(88, 126, 236, 0.15);
   border-radius: 16px;
@@ -599,7 +590,7 @@ html {
 
 .statistics-experts__decor {
   position: absolute;
-  background: #EC5863;
+  background: var(--main-color);
   border-radius: 30px;
 }
 
@@ -660,7 +651,7 @@ html {
 .body-statistics-experts__value {
   font: 700 36px/1.2 Rubik;
   letter-spacing: 1px;
-  color: #EC5863;
+  color: var(--main-color);
   margin-bottom: 5px;
 }
 
@@ -668,7 +659,7 @@ html {
   font: 700 11px/1.8 Rubik;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #000;
+  color: var(--second-text-color);
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -716,7 +707,7 @@ html {
 .healthcare__column_1::after {
   content: "";
   position: absolute;
-  background-color: #ec5863;
+  background-color: var(--main-color);
   border-radius: 16px;
 }
 
@@ -744,7 +735,7 @@ html {
 .healthcare__column_2::after {
   content: "";
   position: absolute;
-  background-color: #ec5863;
+  background-color: var(--main-color);
   width: 127px;
   height: 127px;
   bottom: -35px;
@@ -758,7 +749,7 @@ html {
 .healthcare__column_3::after {
   content: "";
   position: absolute;
-  background-color: #ec5863;
+  background-color: var(--main-color);
   width: 65px;
   height: 65px;
   top: -25px;
@@ -773,7 +764,7 @@ html {
   height: 100%;
   position: relative;
   z-index: 2;
-  background: #ffffff;
+  background: var(--bg-second-color);
   -webkit-box-shadow: 0 4px 18px rgba(88, 126, 236, 0.18);
           box-shadow: 0 4px 18px rgba(88, 126, 236, 0.18);
   border-radius: 8px;
@@ -797,7 +788,7 @@ html {
 
 .item-healthcare__title {
   font: 700 16px/138.5% Rubik;
-  color: #000000;
+  color: var(---title-color);
   margin: 0 0 4px 0;
 }
 
@@ -915,7 +906,7 @@ html {
   }
 
   .header__container {
-    background: #ffffff;
+    background: var(--bg-second-color);
   }
 
   .header__logo-text {
@@ -955,7 +946,7 @@ html {
     -webkit-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    background: #fff;
+    background: var(--bg-second-color);
     padding: 100px 10px 20px 10px;
     z-index: -1;
   }
@@ -975,7 +966,7 @@ html {
 
   .menu-burger span {
     position: absolute;
-    background: #000;
+    background: var(--second-text-color);
     right: 0;
     width: 66%;
     height: 2px;
@@ -988,7 +979,7 @@ html {
   .menu-burger:before,
   .menu-burger:after {
     content: "";
-    background: #000;
+    background: var(--second-text-color);
     position: absolute;
     height: 2px;
     right: 0;
